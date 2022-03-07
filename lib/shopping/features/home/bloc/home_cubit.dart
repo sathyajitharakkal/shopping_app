@@ -21,10 +21,13 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   getProductDetails({required String value}) {
+    print("keyword : $value");
     try {
-       emit(HomeLoading());
+      emit(HomeLoading());
       serviceLocator.api.getDataSearch((data) {
+      print("Data : $data");
       List<ProductResponse> productResponse = productResponseFromJson(data);
+      print("List : $productResponse");
       emit(HomeLoaded(productResponse));
       }, value);
     } catch (e) {

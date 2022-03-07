@@ -11,7 +11,6 @@ class DetailsScreenRouteBuilder{
   DetailsScreenRouteBuilder(this.serviceLocator, this.movie);
 
   Widget call(BuildContext context){
-    print("details 4");
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => DetailsCubit(serviceLocator, movie)),

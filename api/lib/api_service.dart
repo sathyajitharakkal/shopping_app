@@ -57,7 +57,7 @@ class API {
   }
 
   void getDataSearch(Function(String) onResponse, String value) async {
-    final url = _endpoint(productByLocation);
+    final url = _endpoint(productSearch);
     final Map<String, String> headers = <String, String>{
       "Accept": "application/json",
       "Content-Type": "application/x-www-form-urlencoded"
