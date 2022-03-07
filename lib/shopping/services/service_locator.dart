@@ -1,7 +1,5 @@
 import 'package:api/api_service.dart';
 import 'package:get_it/get_it.dart';
-import 'package:layered_arc/shopping/features/home/bloc/home_cubit.dart';
-import 'package:layered_arc/shopping/features/home/bloc/home_cubit.dart';
 import 'package:layered_arc/shopping/navigation/navigation.dart';
 
 // abstract class CubitsLocator {

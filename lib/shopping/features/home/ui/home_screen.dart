@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:layered_arc/app_theme.dart';
 import 'package:layered_arc/shopping/features/home/bloc/home_cubit.dart';
 import 'package:layered_arc/shopping/models/movies_response.dart';
-import 'package:meta/meta.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

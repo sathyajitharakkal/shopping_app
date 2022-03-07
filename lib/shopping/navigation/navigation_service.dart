@@ -6,7 +6,6 @@ class NavigationService {
   }
 
   Future<void> openDetails(BuildContext context, ProductResponse details) {
-    print("details 1");
     return Navigator.of(context).pushNamed(_detailsRouteName, arguments: ProductDetails(details));
   }
 

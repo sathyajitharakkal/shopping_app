@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/navigator.dart';
 import 'package:layered_arc/shopping/features/details/ui/details_route_builder.dart';
 import 'package:layered_arc/shopping/features/home/ui/home_screen_route_builder.dart';
 import 'package:layered_arc/shopping/models/movies_response.dart';
@@ -17,7 +16,6 @@ class AppRoutesFactory extends RoutesFactory {
 
   @override
   Route createDetailsPageRoute(ProductResponse movie) {
-    print("details 3");
     return MaterialPageRoute(builder: DetailsScreenRouteBuilder(_serviceLocator, movie));
   }
 

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:layered_arc/app_page_injectable.dart';
 import 'package:layered_arc/app_theme.dart';
 import 'package:layered_arc/shopping/features/details/bloc/details_cubit.dart';
 import 'dart:math' as math;

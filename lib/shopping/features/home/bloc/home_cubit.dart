@@ -21,13 +21,10 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   getProductDetails({required String value}) {
-    print("keyword : $value");
     try {
       emit(HomeLoading());
       serviceLocator.api.getDataSearch((data) {
-      print("Data : $data");
       List<ProductResponse> productResponse = productResponseFromJson(data);
-      print("List : $productResponse");
       emit(HomeLoaded(productResponse));
       }, value);
     } catch (e) {
@@ -36,7 +33,6 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   openDetails(BuildContext context, ProductResponse productResponse) {
-    print("details");
     serviceLocator.navigationService.openDetails(context, productResponse);
   }
 

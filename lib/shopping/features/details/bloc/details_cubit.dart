@@ -17,14 +17,12 @@ class DetailsCubit extends Cubit<DetailsState> {
 
   add(){
     int count = (state as DetailsInitial).count + 1;
-    print("Count = "+count.toString());
     emit(DetailsInitial(productResponse, count));
   }
 
   remove(){
     int count = (state as DetailsInitial).count - 1;
     if(count > 0){
-    print("Count = "+count.toString());
     emit(DetailsInitial(productResponse, count));
     }
   }
